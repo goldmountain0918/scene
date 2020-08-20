@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Scene 1</title>
+    <script type="module" src="node_modules/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <script nomodule src="node_modules/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+    <link href="assets/font/rajdhani/style.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <script src="assets/js/script.js"></script>
+</head>
+<body>
+        <video id="video">
+            <source src="assets/video/video.mp4" type="video/mp4">
+        </video>
+    <div id="viewer">
+        <div id="header">
+            <div class="text-white" id="variable1">47%</div>
+        </div>
+        <div class="divider"></div>
+        <div id="model">
+            <model-viewer id="reveal" src="assets/models/mars_transjectoery.glb" alt="A 3D model of Mars" loading="eager" poster="assets/models/poster.png" auto-rotate camera-controls style="width: 90%;height: 100%; background-color: unset;margin: auto"></model-viewer>
+        </div>
+        <div class="divider"></div>
+        <div id="footer">
+            <div class="text-white" id="variable2">5 2 %</div>
+            <div class="text-white" id="variable3">2 3 %</div>
+            <div class="text-white" id="variable4">3 : S1</div>
+            <div id="back"></div>
+        </div>
+    </div>
+</body>
+<!--<form id="loginForm">-->
+<!--    <div id="accept"></div>-->
+<!--    <div id="photo"></div>-->
+<!--</form>-->
+<div id="myModal" class="modal">
+    <div class="modal-content">
+        <div id="call">
+            <div id="accept"></div>
+            <div id="photo"></div>
+        </div>
+    </div>
+</div>
+</html>
