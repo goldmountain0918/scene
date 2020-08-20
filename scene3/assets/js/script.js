@@ -21,7 +21,9 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
         // Auto center this flipbook
 
-        autoCenter: true
+        autoCenter: true,
+
+        duration: 3000
 
     });
     $('#video').get(0).play();
