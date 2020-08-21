@@ -1,0 +1,16 @@
+{
+  "name": "scene-1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "node_modules/.bin/http-server -a 127.0.0.1 -c-1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@google/model-viewer": "^1.1.0",
+    "http-server": "^0.12.3"
+  }
+}

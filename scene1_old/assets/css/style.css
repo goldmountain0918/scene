@@ -116,11 +116,6 @@ body {
 }
 
 
-.alertify .ajs-dialog {
-    min-height: 0!important;
-    height: 0;
-}
-
 #accept {
     position: absolute;
     top: 170px;
