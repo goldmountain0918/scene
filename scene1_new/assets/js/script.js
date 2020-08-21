@@ -1,7 +1,7 @@
 
 document.addEventListener('DOMContentLoaded', (event) => {
     setTimeout(function() {
-        calling();
+        // calling();
     }, 5000);
     document.getElementById('accept').addEventListener('click', () => {
         document.getElementById('myModal').style.display = 'none';
@@ -16,6 +16,9 @@ document.addEventListener('DOMContentLoaded', (event) => {
             calling();
         }, 5000);
     });
+    document.getElementById('reveal').addEventListener('camera-change', () => {
+        console.log('changing...', document.getElementById('reveal').getCameraOrbit());
+    })
 });
 
 
