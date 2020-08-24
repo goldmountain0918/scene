@@ -14,7 +14,6 @@ body {
 #terminal {
     width: 1536px;
     height: 583px!important;
-    position: relative;
 }
 
 #gear {
@@ -22,7 +21,7 @@ body {
     width: 59px;
     height: 61px;
     position: absolute;
-    bottom: 10px;
+    top: -80px;
     right: 10px;
 }
 
@@ -30,4 +29,5 @@ body {
     width: 1536px;
     height: 1050px;
     background-image: url("../img/footer.jpg");
+    position: relative;
 }
