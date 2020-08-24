@@ -25,9 +25,25 @@ body {
     right: 10px;
 }
 
+#progress {
+    width: 1536px;
+    height: 206px;
+    background-image: url("../img/progress.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+#progress.success{
+    background-image: url("../img/success.gif");
+}
+
+#progress.error{
+    background-image: url("../img/error.gif");
+}
+
 #footer {
     width: 1536px;
-    height: 1050px;
+    height: 844px;
     background-image: url("../img/footer.jpg");
-    position: relative;
 }

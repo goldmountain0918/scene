@@ -20,10 +20,11 @@ $(function() {
     var errorFlag = true;
     var term = $('#terminal').terminal(function(command) {
         if (command !== '') {
+            $('#progress').attr('class', errorFlag ? 'error' : 'success');
             var i = 1;
             (function loop() {
                 term.echo(`complex code line ${i++}`);
-                if (i < 31) {
+                if (i < 100) {
                     timer = setTimeout(loop, 100);
                 } else {
                     if (errorFlag) {
@@ -42,5 +43,5 @@ $(function() {
             greetings: '',
             name: '',
             height: 583
-        });
+    });
 });
