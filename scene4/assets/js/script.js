@@ -24,7 +24,7 @@ $(function() {
             var i = 1;
             (function loop() {
                 term.echo(`complex code line ${i++}`);
-                if (i < 100) {
+                if (i < 50) {
                     timer = setTimeout(loop, 100);
                 } else {
                     if (errorFlag) {
