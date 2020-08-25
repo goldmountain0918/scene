@@ -1,8 +1,5 @@
 body {
     margin: 0;
-}
-
-body {
     background-image: url('../background/Landscape.jpg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -14,6 +11,11 @@ body {
     width: 1600px;
     height: 800px;
     position: relative;
+    background-color: #171717;
+}
+
+canvas {
+    outline: none;
 }
 
 #cover {
