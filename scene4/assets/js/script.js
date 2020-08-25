@@ -132,7 +132,7 @@ $(function() {
             (function loop() {
                 term.echo(arr_code_lines[i++]);
                 if (i < arr_code_lines.length) {
-                    timer = setTimeout(loop, 100);
+                    timer = setTimeout(loop, 50);
                 } else {
                     if (errorFlag) {
                         term.echo(' [[b;red;]ERROR]');
