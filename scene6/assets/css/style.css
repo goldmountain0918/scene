@@ -3,15 +3,38 @@ body {
 }
 
 body {
-    background-image: url('../background/Landscape.gif');
+    background-image: url('../background/Landscape.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+#sample {
+    /*border: 2px solid red;*/
+    margin-top: 450px;
+    width: 1600px;
+    height: 800px;
+    position: relative;
+}
+
+#cover {
+    position: absolute;
+    height: 100px;
+    width: 200px;
+    background: #171717;
+    z-index: 10;
+}
 @media (max-width:1536px){
     body{
-        background-image: url('../background/Portrait.gif')
+        background-image: url('../background/Portrait.jpg')
+    }
+    #sample {
+        /*border: 2px solid red;*/
+        margin-top: 525px;
+        width: 1100px;
+        height: 1200px;
     }
 }
+
 
 .arc-text {
     font: 16px sans-serif;
