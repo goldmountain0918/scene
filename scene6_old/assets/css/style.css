@@ -1,0 +1,25 @@
+body {
+    margin: 0;
+    background-image: url('../background/Landscape.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+@media (max-width:1536px){
+    body{
+        background-image: url('../background/Portrait.gif')
+    }
+}
+
+
+.arc-text {
+    font: 16px sans-serif;
+}
+
+.arc-center {
+    fill: none;
+}
+#clock {
+    float: right;
+}
