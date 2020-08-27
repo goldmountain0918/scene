@@ -1,12 +1,12 @@
 body {
     margin: 0;
-    width: 2048px;
-    height: 1536px;
+    width: 100vw;
+    height: 100vh;
     overflow: hidden;
 }
 
 textarea {
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     border: none;
     outline: none;
