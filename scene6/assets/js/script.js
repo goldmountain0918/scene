@@ -1,6 +1,7 @@
 
 document.addEventListener('DOMContentLoaded', (event) => {
     document.getElementById('button').addEventListener('click', function () {
+        init();
         document.getElementById('myModal').style.display = 'block';
     });
     document.getElementById('close').addEventListener('click', function () {
