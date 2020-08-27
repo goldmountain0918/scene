@@ -1,7 +1,10 @@
 
 document.addEventListener('DOMContentLoaded', (event) => {
     document.getElementById('button').addEventListener('click', function () {
-        document.getElementById('sample').style.opacity = '1';
+        document.getElementById('myModal').style.display = 'block';
+    });
+    document.getElementById('close').addEventListener('click', function () {
+        document.getElementById('myModal').style.display = 'none';
     });
 });
 
