@@ -151,4 +151,8 @@ $(function() {
             name: '',
             height: 583
     });
+    $('#gear').on('click', function() {
+        $('#terminal').css('opacity', '1');
+        $('#terminal').css('max-height', '583px');
+    })
 });

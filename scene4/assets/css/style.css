@@ -11,9 +11,18 @@ body {
     background-image: url("../img/header.jpg");
 }
 
+#main {
+    width: 1536px;
+    height: 583px;
+    background-image: url("../img/main.jpg");
+}
+
 #terminal {
     width: 1536px;
-    height: 583px!important;
+    height: 583px;
+    opacity: 0;
+    max-height: 0;
+    -webkit-transition: max-height 0.5s ease-in-out;
 }
 
 #gear {
