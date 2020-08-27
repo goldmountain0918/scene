@@ -19,10 +19,12 @@ body {
 
 #terminal {
     width: 1536px;
-    height: 583px;
+    height: 998px;
     opacity: 0;
     max-height: 0;
     -webkit-transition: max-height 0.5s ease-in-out;
+    position: absolute;
+    top:0;
 }
 
 #gear {

@@ -149,10 +149,10 @@ $(function() {
     },{
             greetings: '',
             name: '',
-            height: 583
+            height: 998
     });
     $('#gear').on('click', function() {
         $('#terminal').css('opacity', '1');
-        $('#terminal').css('max-height', '583px');
+        $('#terminal').css('max-height', '998px');
     })
 });
