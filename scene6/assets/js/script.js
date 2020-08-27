@@ -1,7 +1,11 @@
 
 document.addEventListener('DOMContentLoaded', (event) => {
+    var i = 0;
     document.getElementById('button').addEventListener('click', function () {
-        init();
+        if (i === 0) {
+            init();
+            i++;
+        }
         document.getElementById('myModal').style.display = 'block';
     });
     document.getElementById('close').addEventListener('click', function () {
