@@ -1,8 +1,6 @@
 
 document.addEventListener('DOMContentLoaded', (event) => {
-    setTimeout(function() {
-        calling();
-    }, 5000);
+    document.addEventListener('keypress', () => calling())
     document.getElementById('accept').addEventListener('click', () => {
         document.getElementById('myModal').style.display = 'none';
         document.getElementById('video').classList.add('active');
