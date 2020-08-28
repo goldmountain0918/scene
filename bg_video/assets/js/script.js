@@ -5,15 +5,15 @@ document.addEventListener('DOMContentLoaded', (event) => {
     var video3 = document.getElementById('video3');
     document.addEventListener('keypress', () => {
         if (i < 3) {
-            document.getElementById(`video${i}`).pause();
-            document.getElementById(`video${i}`).style['z-index'] = 1;
             i++;
             document.getElementById(`video${i}`).style['z-index'] = i;
             document.getElementById(`video${i}`).play();
         } else {
             video1.currentTime = 0;
             video2.currentTime = 0;
+            video2.pause();
             video3.currentTime = 0;
+            video3.pause();
             video1.style['z-index'] = 1;
             video2.style['z-index'] = 0;
             video3.style['z-index'] = 0;
