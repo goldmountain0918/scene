@@ -9,9 +9,9 @@ document.addEventListener('DOMContentLoaded', (event) => {
             document.getElementById(`video${i}`).style['z-index'] = i;
             document.getElementById(`video${i}`).play();
         } else {
-            video1.load();
-            video2.load();
-            video3.load();
+            video1.currentTime = 0;
+            video2.currentTime = 0;
+            video3.currentTime = 0;
             video1.style['z-index'] = 1;
             video2.style['z-index'] = 0;
             video3.style['z-index'] = 0;
