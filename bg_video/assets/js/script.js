@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
     document.addEventListener('keypress', () => {
         if (i < 3) {
             document.getElementById(`video${i}`).pause();
+            document.getElementById(`video${i}`).style['z-index'] = 1;
             i++;
             document.getElementById(`video${i}`).style['z-index'] = i;
             document.getElementById(`video${i}`).play();
