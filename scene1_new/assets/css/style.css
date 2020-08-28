@@ -6,6 +6,8 @@ body {
     margin: 0;
     width: 1536px;
     height: 2048px;
+    overflow: hidden;
+    background: #171717;
 }
 
 #video {
@@ -15,7 +17,7 @@ body {
 
 #video.active {
     width: 100%;
-    height: 670px;
+    height: 1024px;
     background-size: cover;
     object-fit: cover;
     transition: height 1s;
@@ -38,10 +40,15 @@ body {
     flex: none
 }
 
+#header.active {
+    height: 1024px;
+    background-position: bottom;
+}
+
 #main {
     width: 1536px;
     height: 670px;
-    background-image: url("../img/main.png");
+    background-image: url("../img/main.jpg");
     background-repeat: no-repeat;
     flex: none
 }
@@ -58,43 +65,62 @@ body {
 }
 
 #footer {
-    background-image: url("../img/footer.png");
+    width: 1536px;
+    height: auto;
+    position: absolute;
+    bottom: 0;
+}
+
+#drawer1 {
+    background-image: url("../img/drawer1.jpg");
     background-repeat: no-repeat;
     width: 1536px;
-    height: 326px;
+    height: 42px;
     position: relative;
     flex: none;
 }
 
+#footer-main {
+    background-image: url("../img/footer-main.jpg");
+    background-repeat: no-repeat;
+    width: 1536px;
+    height: 210px;
+    position: relative;
+    flex: none;
+}
+
+#footer-main.inactive {
+    height: 0;
+    transition: height 1s;
+}
+
+#drawer2 {
+    background-image: url("../img/drawer2.jpg");
+    background-repeat: no-repeat;
+    width: 1536px;
+    height: 74px;
+    position: relative;
+    flex: none;
+}
+
+
 #call {
-    width: 500px;
-    height: 300px;
-    background-image: url("../img/call.png");
+    width: 1029px;
+    height: 497px;
+    background-image: url("../img/call.gif");
     background-repeat: no-repeat;
     margin-left: auto;
-    margin-right: auto;
-    padding: 15px;
 }
 
 
 #accept {
     position: absolute;
-    top: 170px;
-    left: 535px;
-    width: 250px;
-    height: 70px;
+    top: 108px;
+    right: 14px;
+    width: 451px;
+    height: 167px;
 }
 
-#photo {
-    width: 180px;
-    height: 230px;
-    background-image: url("../img/child.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin-left: auto;
-    margin-right: 40px;
-    border-radius: 10px;
-}
 
 model-viewer#reveal {
     --poster-color: transparent;
@@ -102,9 +128,9 @@ model-viewer#reveal {
 
 #back {
     position: absolute;
-    height: 35px;
+    height: 50px;
     width: 40px;
-    top: 260px;
+    top: 0;
     left: 110px;
 }
 
@@ -124,7 +150,7 @@ model-viewer#reveal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
+    padding-top: 225px; /* Location of the box */
     left: 0;
     top: 0;
     width: 100%; /* Full width */
