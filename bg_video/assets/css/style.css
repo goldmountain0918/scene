@@ -15,6 +15,7 @@ body {
     object-fit: cover;
 }
 
-#video2, #video3 {
-    display: none;
+#video1 {
+    z-index: 1;
 }
+
