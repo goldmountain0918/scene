@@ -1,0 +1,75 @@
+body {
+    margin: 0;
+    width: 1536px;
+    height: 2048px;
+    overflow: hidden;
+    background-color: #171717;
+}
+
+#header {
+    width: 1536px;
+    height: 839px;
+    background-image: url("../img/header.png");
+}
+
+#terminal {
+    width: 1536px;
+    height: 839px;
+    opacity: 0;
+    max-height: 0;
+    -webkit-transition: max-height 0.5s ease-in-out;
+    position: absolute;
+    top:0;
+}
+
+#gear {
+    background-image: url("../img/gear.jpg");
+    width: 59px;
+    height: 61px;
+    position: absolute;
+    top: -100px;
+    right: 10px;
+}
+
+#progress {
+    width: 1536px;
+    height: 206px;
+    background-image: url("../img/progress.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+#progress.success{
+    background-image: url("../img/pass.gif");
+}
+
+#progress.error{
+    background-image: url("../img/fail.gif");
+}
+
+#footer {
+    width: 1536px;
+    height: 1003px;
+    background-image: url("../img/footer.png");
+}
+
+#split__bar {
+    width: 100%;
+    height: 10px;
+    cursor: row-resize;
+    background-color: white;
+    position: relative;
+}
+
+#split__bar #split__thumb {
+    width: 100px;
+    height: 30px;
+    background-color: white;
+    border-radius: 10px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}

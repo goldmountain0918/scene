@@ -2,8 +2,8 @@
 document.addEventListener('DOMContentLoaded', (event) => {
     var canvasDiv = document.getElementById('canvasDiv');
     canvas = document.createElement('canvas');
-    canvas.setAttribute('width', 2048);
-    canvas.setAttribute('height', 1536);
+    canvas.setAttribute('width', 1555);
+    canvas.setAttribute('height', 1056);
     canvas.setAttribute('id', 'canvas');
     canvasDiv.appendChild(canvas);
     if(typeof G_vmlCanvasManager != 'undefined') {

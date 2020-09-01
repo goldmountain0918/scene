@@ -1,0 +1,85 @@
+.text-white {
+    color: white;
+}
+
+body {
+    margin: 0;
+    width: 2048px;
+    height: 1536px;
+    overflow: hidden;
+    background-color: #1c1f23;
+}
+
+#header {
+    width: 2048px;
+    height: 400px;
+    background-image: url('../img/header.png');
+    background-size: cover;
+}
+
+#subheader {
+    width: 2048px;
+    height: 80px;
+    background-image: url('../img/header-1.png');
+    background-size: cover;
+}
+
+#main {
+    width: 2048px;
+    height: 1056px;
+    display: flex;
+}
+
+#side {
+    width: 493px;
+    height: 1056px;
+    overflow-y: scroll;
+    background-color: #1c1f23;
+}
+
+#slides {
+    background-image: url('../img/sidebar.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 468px;
+    height: 1711px;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #31b2ce;
+}
+
+
+
+
+#content {
+    width: 1555px;
+    height: 1056px;
+    background-image: url('../img/canvas_bg.png');
+    background-size: cover;
+}
+
+
+#videoDiv, #video{
+    width: 2048px;
+    height: 1536px;
+    position: absolute;
+    z-index: -1;
+}
+
+#video {
+    object-fit: cover;
+}
+
+#canvas {
+    position: absolute;
+    z-index: 1;
+}

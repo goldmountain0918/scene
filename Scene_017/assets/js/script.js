@@ -149,10 +149,27 @@ $(function() {
     },{
             greetings: '',
             name: '',
-            height: 998
+            height: 840
     });
     $('#gear').on('click', function() {
         $('#terminal').css('opacity', '1');
-        $('#terminal').css('max-height', '998px');
+        $('#terminal').css('max-height', '840px');
+    });
+
+    const bar = document.getElementById('split__thumb');
+    const top = document.getElementById('terminal');
+    let mouse_is_down = false;
+
+    bar.addEventListener('touchstart', (e) => {
+        mouse_is_down = true;
+    })
+
+    document.addEventListener('touchmove', (e) => {
+        if (!mouse_is_down) return;
+        top.style.height = `${e.touches[0].clientY}px`;
+    })
+
+    document.addEventListener('touchend', () => {
+        mouse_is_down = false;
     })
 });
