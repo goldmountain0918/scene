@@ -40,15 +40,15 @@ body {
     flex: none
 }
 
-#header.active {
-    height: 1024px;
-    background-position: bottom;
-}
+/*#header.active {*/
+/*    height: 1024px;*/
+/*    background-position: bottom;*/
+/*}*/
 
 #main {
     width: 1536px;
     height: 670px;
-    background-image: url("../img/main.jpg");
+    background-image: url("../img/main.png");
     background-repeat: no-repeat;
     flex: none
 }
@@ -71,20 +71,11 @@ body {
     bottom: 0;
 }
 
-#drawer1 {
-    background-image: url("../img/drawer1.jpg");
-    background-repeat: no-repeat;
-    width: 1536px;
-    height: 42px;
-    position: relative;
-    flex: none;
-}
-
 #footer-main {
-    background-image: url("../img/footer-main.jpg");
+    background-image: url("../img/footer-main.png");
     background-repeat: no-repeat;
     width: 1536px;
-    height: 210px;
+    height: 252px;
     position: relative;
     flex: none;
 }
@@ -105,20 +96,22 @@ body {
 
 
 #call {
-    width: 1029px;
-    height: 497px;
+    width: 762px;
+    height: 423px;
     background-image: url("../img/call.gif");
     background-repeat: no-repeat;
+    background-size: contain;
     margin-left: auto;
+    margin-right: auto;
 }
 
 
 #accept {
     position: absolute;
-    top: 108px;
-    right: 14px;
-    width: 451px;
-    height: 167px;
+    top: 80px;
+    left: 800px;
+    width: 340px;
+    height: 125px;
 }
 
 
@@ -150,7 +143,7 @@ model-viewer#reveal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
-    padding-top: 225px; /* Location of the box */
+    padding-top: 70px; /* Location of the box */
     left: 0;
     top: 0;
     width: 100%; /* Full width */
