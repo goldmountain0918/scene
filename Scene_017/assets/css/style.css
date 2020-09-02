@@ -10,6 +10,15 @@ body {
     width: 1536px;
     height: 839px;
     background-image: url("../img/header.png");
+    position: relative;
+}
+
+#top {
+    width: 1536px;
+    height: 421px;
+    background-image: url("../img/top.gif");
+    bottom: 35px;
+    position: absolute;
 }
 
 #terminal {

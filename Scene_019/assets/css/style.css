@@ -6,6 +6,10 @@ body {
     background-size: cover;
 }
 
+#slider, #video {
+    display: none;
+}
+
 /* The Modal (background) */
 .modal {
     display: none; /* Hidden by default */
@@ -105,5 +109,8 @@ body {
         background-image: url('../img/landscape.png');
         background-repeat: no-repeat;
         background-size: cover;
+    }
+    #slider, #video {
+        display: block;
     }
 }
