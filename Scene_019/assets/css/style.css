@@ -23,6 +23,15 @@ body {
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
 
+.modal.hide {
+    height: 0;
+    transition: height 1s;
+}
+
+@keyframes animatebottom {
+    to {bottom:-800px; opacity:0}
+    from {bottom:0; opacity:1}
+}
 
 @keyframes animatetop {
     from {bottom:-800px; opacity:0}
@@ -38,6 +47,12 @@ body {
     -webkit-animation-name: animatetop;
     -webkit-animation-duration: 1s;
     animation-name: animatetop;
+    animation-fill-mode: backwards;
+    animation-duration: 1s
+}
+
+.hide #signature {
+    animation-name: animatebottom;
     animation-duration: 1s
 }
 

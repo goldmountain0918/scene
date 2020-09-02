@@ -19,6 +19,8 @@ $(function() {
         minWidth: 2
     });
     document.getElementById('send').addEventListener('click', () => {
+        // document.getElementById('signModal').classList.add('hide');
+        signaturePad.clear();
         document.getElementById('signModal').style.display = 'none';
     });
 
