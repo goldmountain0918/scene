@@ -17,6 +17,17 @@ body {
     background-size: cover;
 }
 
+#spin-cover {
+    position: absolute;
+    height: 105px;
+    width: 96px;
+    right: 80px;
+    top: 151px;
+    background-image: url('../img/hive_spin.gif');
+    background-repeat: no-repeat;
+    background-color: #1c1f23;
+}
+
 #subheader {
     width: 2048px;
     height: 80px;
@@ -63,19 +74,20 @@ body {
 #content {
     width: 1555px;
     height: 1056px;
-    background-image: url('../img/canvas_bg.png');
-    background-size: cover;
 }
 
 
-#videoDiv, #video{
-    width: 2048px;
-    height: 1536px;
+#videoDiv {
+    width: 1555px;
+    height: 1056px;
     position: absolute;
     z-index: -1;
 }
 
 #video {
+    width: 1502px;
+    height: 986px;
+    margin: 35px 26px;
     object-fit: cover;
 }
 

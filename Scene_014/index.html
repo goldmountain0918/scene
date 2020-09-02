@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Scene_014</title>
+    <link href="assets/css/style.css" rel="stylesheet">
+    <script src="assets/js/d3.v3.min.js"></script>
+    <script src="assets/js/go.js"></script>
+    <script src="assets/js/script.js"></script>
+</head>
+<body>
+<video autoplay muted loop id="portrait_bg">
+    <source src="assets/background/Portrait.mp4" type="video/mp4">
+</video>
+<!--<video autoplay muted loop id="landscape_bg">
+    <source src="assets/background/Landscape.mp4" type="video/mp4">
+</video>-->
+<div id="button"></div>
+<div id="myModal" class="modal">
+    <div class="modal-content">
+        <div id="sample">
+            <div id="cover"></div>
+            <div id="close"></div>
+            <div id="myDiagramDiv" style="width:100%; height:100%;"></div>
+            <div style="display: none">
+        <textarea id="mySavedModel" style="width:100%;height:250px;">{ "class": "go.GraphLinksModel",
+  "copiesArrays": true,
+  "copiesArrayObjects": true,
+  "linkFromPortIdProperty": "fromPort",
+  "linkToPortIdProperty": "toPort",
+  "nodeDataArray": [
+{"key":1, "name":"Unit One", "loc":"101 204",
+ "leftArray":[ {"portColor":"#fae3d7", "portId":"left0"} ],
+ "topArray":[ {"portColor":"#d6effc", "portId":"top0"} ],
+ "bottomArray":[ {"portColor":"#ebe3fc", "portId":"bottom0"} ],
+ "rightArray":[ {"portColor":"#eaeef8", "portId":"right0"},{"portColor":"#fadfe5", "portId":"right1"} ] },
+{"key":2, "name":"Unit Two", "loc":"320 152",
+ "leftArray":[ {"portColor":"#6cafdb", "portId":"left0"},{"portColor":"#66d6d1", "portId":"left1"},{"portColor":"#fae3d7", "portId":"left2"} ],
+ "topArray":[ {"portColor":"#d6effc", "portId":"top0"} ],
+ "bottomArray":[ {"portColor":"#eaeef8", "portId":"bottom0"},{"portColor":"#eaeef8", "portId":"bottom1"},{"portColor":"#6cafdb", "portId":"bottom2"} ],
+ "rightArray":[  ] },
+{"key":3, "name":"Unit Three", "loc":"384 319",
+ "leftArray":[ {"portColor":"#66d6d1", "portId":"left0"},{"portColor":"#fadfe5", "portId":"left1"},{"portColor":"#6cafdb", "portId":"left2"} ],
+ "topArray":[ {"portColor":"#66d6d1", "portId":"top0"} ],
+ "bottomArray":[ {"portColor":"#6cafdb", "portId":"bottom0"} ],
+ "rightArray":[  ] },
+{"key":4, "name":"Unit Four", "loc":"138 351",
+ "leftArray":[ {"portColor":"#fae3d7", "portId":"left0"} ],
+ "topArray":[ {"portColor":"#6cafdb", "portId":"top0"} ],
+ "bottomArray":[ {"portColor":"#6cafdb", "portId":"bottom0"} ],
+ "rightArray":[ {"portColor":"#6cafdb", "portId":"right0"},{"portColor":"#66d6d1", "portId":"right1"} ] }
+ ],
+  "linkDataArray": [
+{"from":4, "to":2, "fromPort":"top0", "toPort":"bottom0"},
+{"from":4, "to":2, "fromPort":"top0", "toPort":"bottom0"},
+{"from":3, "to":2, "fromPort":"top0", "toPort":"bottom1"},
+{"from":4, "to":3, "fromPort":"right0", "toPort":"left0"},
+{"from":4, "to":3, "fromPort":"right1", "toPort":"left2"},
+{"from":1, "to":2, "fromPort":"right0", "toPort":"left1"},
+{"from":1, "to":2, "fromPort":"right1", "toPort":"left2"}
+ ]}
+    </textarea>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

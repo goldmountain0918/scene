@@ -11,6 +11,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
     });
     document.getElementById('back').addEventListener('click', () => {
         document.getElementById('video').classList.remove('active');
+        document.getElementById('video').load();
         document.getElementById('main').classList.remove('inactive');
         document.getElementById('footer-main').classList.remove('inactive');
         document.getElementById('header').classList.remove('active');
