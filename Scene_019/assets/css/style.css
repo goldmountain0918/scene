@@ -1,21 +1,76 @@
 body {
     margin: 0;
-    width: 1536px;
-    height: 2048px;
     overflow: hidden;
-    background-image: url('../background/bg_3.jpg');
+    background-image: url('../img/portrait.png');
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 1219px; /* Location of the box */
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+
+@keyframes animatetop {
+    from {bottom:-800px; opacity:0}
+    to {bottom:0; opacity:1}
+}
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: transparent;
+    margin: auto;
+    padding: 0;
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 1s;
+    animation-name: animatetop;
+    animation-duration: 1s
+}
+
+#signature {
+    width: 1536px;
+    height: 829px;
+    background-image: url("../img/signature.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#pad {
+    height: 210px;
+    width: 885px;
+    position: absolute;
+    bottom: 200px;
+    right: 280px;
+}
+
+#send {
+    height: 45px;
+    width: 145px;
+    position: absolute;
+    bottom: 138px;
+    right: 175px;
 }
 
 .range {
     -webkit-appearance: none;
     position: absolute;
-    top: 520px;
-    left: 1340px;
-    width: 1165px;
+    top: 354px;
+    left: 1909px;
+    width: 1090px;
     transform: rotate(90deg);
     transform-origin: left;
+    background: red;
+    border: 1px solid red;
 }
 
 .range:focus {
@@ -44,3 +99,11 @@ body {
      -webkit-appearance: none;
      margin-top: -20px;
  }
+
+@media (min-width:1537px){
+    body {
+        background-image: url('../img/landscape.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}

@@ -8,7 +8,21 @@ $(function() {
         rangePercent = $('[type="range"]').val();
         s.textContent = `.range::-webkit-slider-thumb{background-color: hsl(${rangePercent / 100 * 250}, 100%, 50%)}`
     });
+
+
+    document.addEventListener('keypress', () => sign());
+    var signaturePad = new SignaturePad(document.getElementById('pad'), {
+        backgroundColor: 'rgba(255, 255, 255, 0)',
+        penColor: 'rgb(0, 0, 0)',
+        minWidth: 2
+    });
+    document.getElementById('send').addEventListener('click', () => {
+        document.getElementById('signModal').style.display = 'none';
+    });
+
 });
+
+
 function touchHandler(event) {
     var touch = event.changedTouches[0];
 
@@ -31,4 +45,8 @@ function init() {
     document.addEventListener("touchmove", touchHandler, true);
     document.addEventListener("touchend", touchHandler, true);
     document.addEventListener("touchcancel", touchHandler, true);
+}
+
+function sign() {
+    document.getElementById('signModal').style.display = 'block';
 }

@@ -1,12 +1,14 @@
 body {
     margin: 0;
-    background-image: url('../background/Landscape.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: #171717;
 }
 
 #portrait_bg {
     display: none;
+}
+
+#landscape_bg {
+    display: block;
 }
 
 #sample {
@@ -47,13 +49,13 @@ canvas {
 }
 
 @media (max-width:1536px){
-    body{
-        /*background-image: url('../background/Portrait.jpg')*/
-        background-image: none;
-    }
 
     #portrait_bg {
         display: block;
+    }
+
+    #landscape_bg {
+        display: none;
     }
 
     #button {
