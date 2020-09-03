@@ -7,7 +7,7 @@ $(function() {
     $('[type="range"]').on('change input', function() {
         rangePercent = $('[type="range"]').val();
         s.textContent = `.range::-webkit-slider-thumb{background-color: hsl(${rangePercent / 100 * 250}, 100%, 50%)}`;
-        var vid = document.getElementById("video");
+        var vid = document.getElementById("landscape_bg");
         vid.playbackRate = 16 - rangePercent;
     });
 

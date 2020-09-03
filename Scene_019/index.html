@@ -9,10 +9,13 @@
     <script src="assets/js/script.js"></script>
 </head>
 <body>
-<input id="slider" class="range" type="range" step="0.1" min="1" max="15" value="15">
-<video id="video" autoplay="autoplay" muted="muted" loop>
-    <source src="assets/video/video.mp4" type="video/mp4">
+<video autoplay muted loop id="portrait_bg">
+    <source src="assets/video/portrait.mp4" type="video/mp4">
 </video>
+<video autoplay muted loop id="landscape_bg">
+    <source src="assets/video/landscape.mp4" type="video/mp4">
+</video>
+<input id="slider" class="range" type="range" step="0.1" min="1" max="15" value="15">
 <div id="signature">
     <canvas id="pad" width="885" height="210"></canvas>
     <div id="send"></div>

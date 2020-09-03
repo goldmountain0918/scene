@@ -95,3 +95,30 @@ body {
     position: absolute;
     z-index: 1;
 }
+
+#emailbox {
+    background-image: url("../img/email_box.png");
+    height: 1086px;
+    width: 1340px;
+    position: absolute;
+    top: 0;
+    touch-action: none;
+    user-select: none;
+    -webkit-transform: translate(0px, 0px);
+    transform: translate(0px, 0px);
+}
+#drag-1, #drag-2 {
+    width: 25%;
+    min-height: 6.5em;
+    margin: 10%;
+    background-color: #29e;
+    color: white;
+    border-radius: 0.75em;
+    padding: 4%;
+    touch-action: none;
+    user-select: none;
+    -webkit-transform: translate(0px, 0px);
+    transform: translate(0px, 0px);
+    position: absolute;
+    top: 0;
+}

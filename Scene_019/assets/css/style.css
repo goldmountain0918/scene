@@ -1,13 +1,24 @@
 body {
     margin: 0;
     overflow: hidden;
-    background-image: url('../img/portrait.png');
-    background-repeat: no-repeat;
-    background-size: cover;
     width: 1536px;
 }
 
-#slider, #video {
+#portrait_bg {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+#landscape_bg {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+#slider {
     display: none;
 }
 
@@ -88,8 +99,6 @@ body {
     width: 1090px;
     transform: rotate(90deg);
     transform-origin: left;
-    background: red;
-    border: 1px solid red;
 }
 
 .range:focus {
@@ -110,22 +119,30 @@ body {
      box-shadow: none;
      border: 0px solid #ffffff;
      box-shadow: 0px 10px 10px rgba(0,0,0,0.25);
-     height: 40px;
-     width: 40px;
+     height: 247px;
+     width: 247px;
      border-radius: 50%;
-     background-color: blue;
+     background-image: url("../img/slider_thmub.png");
      cursor: pointer;
      -webkit-appearance: none;
-     margin-top: -20px;
+     margin-top: -124px;
  }
 
 @media (min-width:1537px){
-    body {
-        background-image: url('../img/landscape.png');
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-    #slider, #video {
+
+    #slider {
         display: block;
+    }
+
+    #portrait_bg {
+        display: none;
+    }
+
+    #landscape_bg {
+        display: block;
+    }
+
+    #signature {
+        display: none;
     }
 }
