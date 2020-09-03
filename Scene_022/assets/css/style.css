@@ -1,0 +1,74 @@
+body {
+    margin: 0;
+    background-image: url('../background/background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*!* Ripple effect *!
+.ripple {
+    background-position: center;
+    transition: background 0.8s;
+}
+.ripple:hover {
+    background: transparent radial-gradient(circle, transparent 1%, transparent 1%) center/15000%;
+}
+.ripple:active {
+    background-color: transparent;
+    background-size: 100%;
+    transition: background 0s;
+}
+
+.ripple:active {
+    background: lighten(#005dab, 5%);
+    box-shadow: rgba(0,0,0,0.5) 0 3px 10px 0;
+    transition: all .5s;
+}*/
+/* Button style */
+button {
+    border: none;
+    padding: 30px 115px;
+    font-size: 16px;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: transparent;
+    background-color: transparent;
+    outline: none;
+    position: absolute;
+    left: 45px;
+    top: 1540px;
+    display: inline-block;
+    box-sizing: border-box;
+    border-radius: 3px;
+    box-shadow: rgba(0,0,0,0.5) 0 2px 10px 0;
+    text-decoration: none;
+    overflow: hidden;
+    transition: all .5s;
+}
+
+.ripple {
+    position: relative;
+}
+.ripple:after {
+    content: "";
+    background: rgba(255,255,255,0.3);
+    display: block;
+    position: absolute;
+    border-radius: 50%;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 450px;
+    height: 450px;
+    margin: auto;
+    opacity: 0;
+    transition: all 1s;
+}
+.ripple:active:after {
+    height: 10px;
+    width: 10px;
+    opacity: 1;
+    transition: 0s;
+}
+

@@ -6,16 +6,11 @@
     <link href="assets/font/rajdhani/style.css" rel="stylesheet">
     <link href="assets/css/style.css" rel="stylesheet">
     <script type="text/javascript" src="assets/js/jquery.min.1.7.js"></script>
+    <script type="text/javascript" src="assets/js/signature_pad.min.js"></script>
     <script type="text/javascript" src="assets/js/interact.min.js"></script>
     <script src="assets/js/script.js"></script>
 </head>
 <body>
-<!--<div id="drag-1" class="draggable">-->
-<!--    <p> You can drag one element </p>-->
-<!--</div>-->
-<!--<div id="drag-2" class="draggable">-->
-<!--    <p> with each pointer </p>-->
-<!--</div>-->
 <div id="header">
     <div id="spin-cover"></div>
 </div>
@@ -25,7 +20,7 @@
         <div id="slides"></div>
     </div>
     <div id="content">
-        <div id="canvasDiv"></div>
+        <canvas id="canvas" width="1555" height="1056"></canvas>
         <div id="videoDiv">
             <video id="video" autoplay="autoplay" muted="muted" loop>
                 <source src="assets/video/video.mp4" type="video/mp4">
@@ -34,12 +29,14 @@
     </div>
 </div>
 <div id="emailbox" class="draggable">
-<!--    <div id="canvasDiv"></div>
-    <div id="videoDiv">
-        <video id="video" autoplay="autoplay" muted="muted" loop>
-            <source src="assets/video/video.mp4" type="video/mp4">
-        </video>
-    </div>-->
+    <div id="emailcontent"></div>
+    <div id="index1" class="index active" data-index="1"></div>
+    <div id="index2" class="index" data-index="2"></div>
+    <div id="index3" class="index" data-index="3"></div>
+    <div id="index4" class="index" data-index="4"></div>
+    <div id="index5" class="index" data-index="5"></div>
+    <div id="index6" class="index" data-index="6"></div>
+    <div id="index7" class="index" data-index="7"></div>
 </div>
 </body>
 </html>

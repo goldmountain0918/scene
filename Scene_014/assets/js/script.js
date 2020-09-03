@@ -1,30 +1,99 @@
 
 document.addEventListener('DOMContentLoaded', (event) => {
-    var i = 0;
+    var j = 0;
     document.getElementById('button').addEventListener('click', function () {
-        // document.getElementById('myModal').style.display = 'block';
-        // document.getElementById('myDiagramDiv').style['display'] = 'block';
-        // document.getElementById('headerbar').style['display'] = 'block';
-        // document.getElementById('cover').style['display'] = 'block';
-        // document.getElementById('sample').style['display'] = 'block';
         document.getElementById('sample').style['max-width'] = '1024px';
-        if (i === 0) {
+        if (j === 0) {
             init();
-            i++;
+            j++;
         }
     });
     document.getElementById('exit').addEventListener('click', function () {
-        // document.getElementById('myModal').style.display = 'none';
         document.getElementById('sample').style['max-width'] = '0';
-        // document.getElementById('sample').style['display'] = 'none';
-        // document.getElementById('myDiagramDiv').style['display'] = 'none';
-        // document.getElementById('headerbar').style['display'] = 'none';
-        // document.getElementById('cover').style['display'] = 'none';
+    });
+    // target elements with the "draggable" class
+    interact('.draggable')
+        .draggable({
+            // enable inertial throwing
+            inertia: true,
+            // keep the element within the area of it's parent
+            modifiers: [
+                interact.modifiers.restrictRect({
+                    restriction: 'parent',
+                    endOnly: true
+                })
+            ],
+            // enable autoScroll
+            autoScroll: true,
+
+            listeners: {
+                // call this function on every dragmove event
+                move: dragMoveListener,
+
+                // call this function on every dragend event
+                end (event) {
+                }
+            }
+        })
+
+    function dragMoveListener (event) {
+        var target = event.target
+        // keep the dragged position in the data-x/data-y attributes
+        var x = (parseFloat(target.getAttribute('data-x')) || 0) + event.dx
+        var y = (parseFloat(target.getAttribute('data-y')) || 0) + event.dy
+
+        // translate the element
+        target.style.webkitTransform =
+            target.style.transform =
+                'translate(' + x + 'px, ' + y + 'px)'
+
+        // update the posiion attributes
+        target.setAttribute('data-x', x)
+        target.setAttribute('data-y', y)
+    }
+
+
+    var elements = document.getElementsByClassName('index');
+    for (var i = 0; i < elements.length; i++) {
+        elements[i].addEventListener('click', function () {
+            $(".index").removeClass("active");
+            this.classList.add('active');
+            $('#emailcontent').css('background-image', 'url("../Scene_014/assets/emails/'+ this.getAttribute('data-index') +'.jpg")');
+        }, false);
+    }
+
+
+    const thumb = document.getElementById('split__thumb');
+    const top = document.getElementById('split__top');
+    let mouse_is_down = false;
+
+    thumb.addEventListener('touchstart', (e) => {
+        mouse_is_down = true;
+    })
+
+    document.addEventListener('touchmove', (e) => {
+        if (!mouse_is_down) return;
+        top.style.height = `${e.touches[0].clientY}px`;
+    })
+
+    document.addEventListener('touchend', () => {
+        mouse_is_down = false;
+    })
+
+    document.getElementById('trigger').addEventListener('click', function () {
+        var emailbox = document.getElementById('emailbox');
+        var bar = document.getElementById('split__bar');
+        var bottom = document.getElementById('split__bottom');
+        if (document.documentElement.clientWidth > 1536) {
+            emailbox.style.display = emailbox.style.display === 'block' ? 'none' : 'block';
+        } else {
+            bar.style.display = bar.style.display === 'block' ? 'none' : 'block';
+            bottom.style.display = bottom.style.display === 'block' ? 'none' : 'block';
+        }
     });
 });
 
 
-// document.addEventListener('DOMContentLoaded', (event) => {
     function init() {
         if (window.goSamples) goSamples();  // init for these samples -- you don't need to call this
         var $ = go.GraphObject.make;  //for conciseness in defining node templates
@@ -458,4 +527,4 @@ document.addEventListener('DOMContentLoaded', (event) => {
         // so the GraphLinksModel needs to set these property names:
         // linkFromPortIdProperty and linkToPortIdProperty.
     }
-// });
+

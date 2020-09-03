@@ -1,76 +1,10 @@
 
 document.addEventListener('DOMContentLoaded', (event) => {
-    var canvasDiv = document.getElementById('canvasDiv');
-    canvas = document.createElement('canvas');
-    canvas.setAttribute('width', 1555);
-    canvas.setAttribute('height', 1056);
-    canvas.setAttribute('id', 'canvas');
-    canvasDiv.appendChild(canvas);
-    if(typeof G_vmlCanvasManager != 'undefined') {
-        canvas = G_vmlCanvasManager.initElement(canvas);
-    }
-    context = canvas.getContext("2d");
-
-    $('#canvas').on('mousedown touchstart', function(e){
-        var mouseX = e.pageX - this.offsetLeft;
-        var mouseY = e.pageY - this.offsetTop;
-
-        paint = true;
-        addClick(e.pageX - this.offsetLeft, e.pageY - this.offsetTop);
-        redraw();
+    var signaturePad = new SignaturePad(document.getElementById('canvas'), {
+        backgroundColor: 'rgba(255, 255, 255, 0)',
+        penColor: 'rgb(0, 0, 255)',
+        minWidth: 3
     });
-
-    $('#canvas').on('mousemove touchmove', function(e){
-        if(paint){
-            if(e.type === 'touchmove') {
-                addClick(e.originalEvent.touches[0].pageX - this.offsetLeft, e.originalEvent.touches[0].pageY - this.offsetTop, true);
-            } else {
-                addClick(e.pageX - this.offsetLeft, e.pageY - this.offsetTop, true);
-            }
-            redraw();
-        }
-    });
-
-    $('#canvas').on('mouseup touchend', function(e){
-        paint = false;
-    });
-
-    $('#canvas').on('mouseleave', function(e){
-        paint = false;
-    });
-
-    var clickX = new Array();
-    var clickY = new Array();
-    var clickDrag = new Array();
-    var paint;
-
-    function addClick(x, y, dragging)
-    {
-        clickX.push(x);
-        clickY.push(y);
-        clickDrag.push(dragging);
-    }
-
-    function redraw(){
-        context.clearRect(0, 0, context.canvas.width, context.canvas.height); // Clears the canvas
-
-        context.strokeStyle = "#062ff3";
-        context.lineJoin = "round";
-        context.lineWidth = 10;
-
-        for(var i=0; i < clickX.length; i++) {
-            context.beginPath();
-            if(clickDrag[i] && i){
-                context.moveTo(clickX[i-1], clickY[i-1]);
-            }else{
-                context.moveTo(clickX[i]-1, clickY[i]);
-            }
-            context.lineTo(clickX[i], clickY[i]);
-            context.closePath();
-            context.stroke();
-        }
-    }
-
 
     // target elements with the "draggable" class
     interact('.draggable')
@@ -113,6 +47,16 @@ document.addEventListener('DOMContentLoaded', (event) => {
         target.setAttribute('data-y', y)
     }
 
-// this function is used later in the resizing and gesture demos
-    window.dragMoveListener = dragMoveListener
+    var elements = document.getElementsByClassName('index');
+    for (var i = 0; i < elements.length; i++) {
+        elements[i].addEventListener('click', function () {
+            $(".index").removeClass("active");
+            this.classList.add('active');
+            $('#emailcontent').css('background-image', 'url("../Scene_007/assets/emails/'+ this.getAttribute('data-index') +'.jpg")');
+        }, false);
+    }
+    document.getElementById('spin-cover').addEventListener('click', function () {
+        var emailbox = document.getElementById('emailbox');
+        emailbox.style.display = emailbox.style.display === 'block' ? 'none' : 'block';
+    })
 });
