@@ -19,9 +19,9 @@ $(function() {
         minWidth: 2
     });
     document.getElementById('send').addEventListener('click', () => {
-        // document.getElementById('signModal').classList.add('hide');
+        $('#signature').css('max-height', '0');
         signaturePad.clear();
-        document.getElementById('signModal').style.display = 'none';
+        // document.getElementById('signModal').style.display = 'none';
     });
 
 });
@@ -52,5 +52,6 @@ function init() {
 }
 
 function sign() {
-    document.getElementById('signModal').style.display = 'block';
+    // document.getElementById('signModal').style.display = 'block';
+    $('#signature').css('max-height', '829px');
 }

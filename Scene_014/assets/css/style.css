@@ -1,23 +1,34 @@
 body {
     margin: 0;
     background-color: #171717;
+    width: 2048px;
+    height: 1536px;
+    overflow:hidden;
 }
 
 #portrait_bg {
     display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
 }
 
 #landscape_bg {
     display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
 }
 
 #sample {
-    position: relative;
-    background-image: url("../background/popup.png");
-    height: 766px;
-    width: 692px;
-    padding-top: 35px;
-    padding-bottom: 35px;
+    background-color: #f9f9f9;
+    height: 1536px;
+    width: 100%;
+    max-width: 0;
+    transition: max-width 1s;
+    position: absolute;
+    top: 0;
+    right: 0;
 }
 
 #button {
@@ -32,23 +43,48 @@ canvas {
     outline: none;
 }
 
+#headerbar {
+    background-image: url("../background/headerbar.png");
+    background-repeat: repeat-y;
+    height: 52px;
+}
+
 #cover {
     position: absolute;
     height: 100px;
     width: 200px;
-    background: #171717;
+    background: #f9f9f9;
     z-index: 10;
-    top: 35px;
+    top: 52px;
 }
 
-#close {
+#exit {
+    background-image: url("../background/button.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 52px;
+    width: 173px;
     position: absolute;
-    width: 40px;
-    height: 40px;
     top: 0;
+    left: 20px;
+}
+
+#workflow {
+    background-image: url("../background/workflow.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 52px;
+    width: 209px;
+    position: absolute;
+    top: 0;
+    right: 20px;
 }
 
 @media (max-width:1536px){
+
+    body {
+        width: 1536px;
+    }
 
     #portrait_bg {
         display: block;
@@ -59,11 +95,7 @@ canvas {
     }
 
     #button {
-        height: 420px;
-        width: 415px;
-        position: absolute;
-        right: 18px;
-        top: 995px;
+        display: none;
     }
 }
 
@@ -118,11 +150,3 @@ canvas {
     animation-duration: .3s
 }
 
-
-#accept {
-    position: absolute;
-    top: 170px;
-    left: 535px;
-    width: 250px;
-    height: 70px;
-}

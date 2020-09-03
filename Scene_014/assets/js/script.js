@@ -2,14 +2,23 @@
 document.addEventListener('DOMContentLoaded', (event) => {
     var i = 0;
     document.getElementById('button').addEventListener('click', function () {
-        document.getElementById('myModal').style.display = 'block';
+        // document.getElementById('myModal').style.display = 'block';
+        // document.getElementById('myDiagramDiv').style['display'] = 'block';
+        // document.getElementById('headerbar').style['display'] = 'block';
+        // document.getElementById('cover').style['display'] = 'block';
+        document.getElementById('sample').style['max-width'] = '1024px';
         if (i === 0) {
             init();
             i++;
         }
     });
-    document.getElementById('close').addEventListener('click', function () {
-        document.getElementById('myModal').style.display = 'none';
+    document.getElementById('exit').addEventListener('click', function () {
+        // document.getElementById('myModal').style.display = 'none';
+        document.getElementById('sample').style['max-width'] = '0';
+        document.getElementById('sample').style['display'] = 'none';
+        // document.getElementById('myDiagramDiv').style['display'] = 'none';
+        // document.getElementById('headerbar').style['display'] = 'none';
+        // document.getElementById('cover').style['display'] = 'none';
     });
 });
 

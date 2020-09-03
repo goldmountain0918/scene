@@ -4,6 +4,7 @@ body {
     background-image: url('../img/portrait.png');
     background-repeat: no-repeat;
     background-size: cover;
+    width: 1536px;
 }
 
 #slider, #video {
@@ -51,17 +52,16 @@ body {
     animation-duration: 1s
 }
 
-.hide #signature {
-    animation-name: animatebottom;
-    animation-duration: 1s
-}
-
 #signature {
     width: 1536px;
     height: 829px;
+    max-height: 0;
     background-image: url("../img/signature.png");
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
+    position: absolute;
+    bottom: 0;
+    transition: max-height 1s ease-in-out;
 }
 
 #pad {
