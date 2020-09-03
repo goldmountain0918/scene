@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
         // document.getElementById('myDiagramDiv').style['display'] = 'block';
         // document.getElementById('headerbar').style['display'] = 'block';
         // document.getElementById('cover').style['display'] = 'block';
+        // document.getElementById('sample').style['display'] = 'block';
         document.getElementById('sample').style['max-width'] = '1024px';
         if (i === 0) {
             init();
@@ -15,7 +16,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
     document.getElementById('exit').addEventListener('click', function () {
         // document.getElementById('myModal').style.display = 'none';
         document.getElementById('sample').style['max-width'] = '0';
-        document.getElementById('sample').style['display'] = 'none';
+        // document.getElementById('sample').style['display'] = 'none';
         // document.getElementById('myDiagramDiv').style['display'] = 'none';
         // document.getElementById('headerbar').style['display'] = 'none';
         // document.getElementById('cover').style['display'] = 'none';
