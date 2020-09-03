@@ -13,6 +13,7 @@ body {
     background-image: url("../background/header.png");
     background-repeat: no-repeat;
     background-size: cover;
+    background-color: #1a1d20;
     height: 370px;
     width: 1536px;
     position: absolute;
