@@ -20,8 +20,7 @@ $(function() {
     });
     document.getElementById('send').addEventListener('click', () => {
         $('#signature').css('max-height', '0');
-        signaturePad.clear();
-        // document.getElementById('signModal').style.display = 'none';
+        setTimeout(()=> signaturePad.clear(), 1000);
     });
 
 });
@@ -52,6 +51,5 @@ function init() {
 }
 
 function sign() {
-    // document.getElementById('signModal').style.display = 'block';
     $('#signature').css('max-height', '829px');
 }

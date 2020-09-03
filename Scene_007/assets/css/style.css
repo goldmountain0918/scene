@@ -4,10 +4,23 @@
 
 body {
     margin: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#landscape_bg {
     width: 2048px;
     height: 1536px;
     overflow: hidden;
     background-color: #1c1f23;
+}
+
+#portrait_bg {
+    width: 1536px;
+    height: 2048px;
+    overflow: hidden;
+    display: none;
 }
 
 #header {
@@ -81,7 +94,7 @@ body {
     width: 1555px;
     height: 1056px;
     position: absolute;
-    z-index: -1;
+    z-index: 1;
 }
 
 #video {
@@ -93,7 +106,7 @@ body {
 
 #canvas {
     position: absolute;
-    z-index: 1;
+    z-index: 2;
 }
 
 #emailbox {
@@ -159,4 +172,61 @@ body {
     left: 120px;
     background-image: url("../emails/1.jpg");
     background-size: cover;
+}
+
+@media (max-width:1536px){
+    #landscape_bg {
+        display: none;
+    }
+    #portrait_bg {
+        display: block;
+    }
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+#split__top {
+    height: 50%;
+    background-image: url('../img/top.png');
+    background-repeat: no-repeat;
+}
+
+#split__bottom {
+    flex: 1;
+    padding-top: 200px;
+    background-image: url('../img/notepad-header.png');
+    background-repeat: no-repeat;
+}
+
+#split__bar {
+    width: 100%;
+    height: 10px;
+    cursor: row-resize;
+    background-color: white;
+    position: relative;
+}
+
+#split__bar #split__thumb {
+    width: 100px;
+    height: 30px;
+    background-color: white;
+    border-radius: 10px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+textarea {
+    width: 1200px;
+    height: 100%;
+    border: none;
+    outline: none;
+    font-size: 30px;
+    margin-left: 168px;
 }
