@@ -15,3 +15,11 @@ body {
     background-size: cover;
     object-fit: cover;
 }
+
+#header {
+    background-image: url("../img/header.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 86px;
+    width: 1024px;
+}

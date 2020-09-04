@@ -9,7 +9,7 @@ body {
     background-color: #1a1d20;
 }
 
-#header {
+#header-1 {
     background-image: url("../background/header.png");
     background-repeat: no-repeat;
     background-size: cover;
@@ -19,6 +19,19 @@ body {
     position: absolute;
     top: 0;
     z-index: 2;
+}
+
+#header-2 {
+    background-image: url("../background/header.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #1a1d20;
+    height: 370px;
+    width: 1536px;
+    position: absolute;
+    top: 0;
+    z-index: 2;
+    opacity: 0;
 }
 
 #main {

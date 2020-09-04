@@ -99,6 +99,7 @@ body {
     width: 1090px;
     transform: rotate(90deg);
     transform-origin: left;
+    background: red;
 }
 
 .range:focus {
@@ -118,7 +119,7 @@ body {
 .range::-webkit-slider-thumb {
      box-shadow: none;
      border: 0px solid #ffffff;
-     box-shadow: 0px 10px 10px rgba(0,0,0,0.25);
+     /*box-shadow: 0px 10px 10px rgba(0,0,0,0.25);*/
      height: 247px;
      width: 247px;
      border-radius: 50%;
@@ -145,4 +146,15 @@ body {
     #signature {
         display: none;
     }
+
+    #slider_bg {
+        height: 123.5px;
+        width: 140px;
+        position: absolute;
+        bottom: 90px;
+        right: 66px;
+        background-color: hsl(60, 100%, 50%);
+        opacity: .3;
+    }
 }
+

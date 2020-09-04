@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
         // Height
 
-        height:1536,
+        height:1450,
 
         // Elevation
 
@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
         autoCenter: true,
 
-        duration: 3000
+        duration: 2500
 
     });
     $('#video').get(0).play();
