@@ -1,0 +1,19 @@
+.text-white {
+    color: white;
+}
+
+body {
+    margin: 0;
+    width: 2048px;
+    height: 1536px;
+    overflow:hidden;
+}
+
+
+#header {
+    background-image: url("../img/header.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 86px;
+    width: 2048px;
+}

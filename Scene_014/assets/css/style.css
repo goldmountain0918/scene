@@ -65,7 +65,7 @@ canvas {
     position: absolute;
     height: 100px;
     width: 200px;
-    background: #f9f9f9;
+    background: #BDBDBD;
     z-index: 10;
     top: 52px;
 }
@@ -234,7 +234,13 @@ canvas {
     background-image: url("../emails/1.jpg");
     background-size: cover;
 }
-
+#emailclose {
+    position: absolute;
+    height: 45px;
+    width: 120px;
+    top: 0;
+    left: 0;
+}
 .container {
     display: flex;
     flex-direction: column;
@@ -282,4 +288,8 @@ textarea {
     outline: none;
     font-size: 30px;
     margin-left: 168px;
+}
+
+#myDiagramDiv {
+    background-color: #BDBDBD;
 }

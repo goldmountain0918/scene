@@ -125,6 +125,7 @@ model-viewer#reveal {
     width: 40px;
     top: 0;
     left: 110px;
+    z-index: 5;
 }
 
 /* Add Animation */
@@ -149,8 +150,8 @@ model-viewer#reveal {
     width: 100%; /* Full width */
     height: 100%; /* Full height */
     overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    /*background-color: rgb(0,0,0); !* Fallback color *!*/
+    /*background-color: rgba(0,0,0,0.4); !* Black w/ opacity *!*/
 }
 
 /* Modal Content */
@@ -163,4 +164,12 @@ model-viewer#reveal {
     -webkit-animation-duration: 1s;
     animation-name: animatetop;
     animation-duration: 1s
+}
+
+.overlay {
+    background-color: rgba(0,0,0,0.4);
+    position: absolute;
+    height: 2048px;
+    width: 1536px;
+    top: 0;
 }

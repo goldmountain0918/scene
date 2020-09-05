@@ -2,6 +2,7 @@ body {
     margin: 0;
     overflow: hidden;
     width: 1536px;
+    height: 2048px;
 }
 
 #portrait_bg {
@@ -130,6 +131,10 @@ body {
  }
 
 @media (min-width:1537px){
+    body {
+        width: 2048px;
+        height: 1536px;
+    }
 
     #slider {
         display: block;
@@ -156,5 +161,93 @@ body {
         background-color: hsl(60, 100%, 50%);
         opacity: .3;
     }
+
+    #emailbox {
+        display: none;
+    }
+
+    #trigger {
+        display: none;
+    }
 }
 
+#emailbox {
+    background-image: url("../img/email_box.png");
+    height: 1086px;
+    width: 1340px;
+    position: absolute;
+    top: 25%;
+    left: 6%;
+    touch-action: none;
+    user-select: none;
+    -webkit-transform: translate(0px, 0px);
+    transform: translate(0px, 0px);
+    z-index: 3;
+    display: none;
+}
+
+.index {
+    position: absolute;
+    height: 135px;
+    width: 406px;
+    right: 90px;
+}
+.index.active:before {
+    position: absolute;
+    content: " ";
+    width: 0;
+    height: 0;
+}
+.index.active:before {
+    border-right: 30px solid #465794;
+    border-bottom: 30px solid transparent;
+    border-top: 30px solid transparent;
+    left: -30px;
+    bottom: 40px;
+}
+#index1 {
+    top: 133px;
+}
+#index2 {
+    top: 270px;
+}
+#index3 {
+    top: 407px;
+}
+#index4 {
+    top: 544px;
+}
+#index5 {
+    top: 681px;
+}
+#index6 {
+    top: 816px;
+}
+#index7 {
+    top: 953px;
+}
+#emailcontent {
+    position: absolute;
+    height: 700px;
+    width: 600px;
+    top: 200px;
+    left: 120px;
+    background-image: url("../emails/1.jpg");
+    background-size: cover;
+}
+#emailclose {
+    position: absolute;
+    height: 45px;
+    width: 120px;
+    top: 0;
+    left: 0;
+}
+
+#trigger {
+    position: absolute;
+    top: 160px;
+    right: 90px;
+    height: 100px;
+    width: 100px;
+    z-index: 5;
+}

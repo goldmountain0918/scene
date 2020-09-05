@@ -47,19 +47,21 @@ document.addEventListener('DOMContentLoaded', (event) => {
         target.setAttribute('data-y', y)
     }
 
-    var elements = document.getElementsByClassName('index');
-    for (var i = 0; i < elements.length; i++) {
+    const elements = document.getElementsByClassName('index');
+    for (let i = 0; i < elements.length; i++) {
         elements[i].addEventListener('click', function () {
             $(".index").removeClass("active");
             this.classList.add('active');
             $('#emailcontent').css('background-image', 'url("../Scene_007/assets/emails/'+ this.getAttribute('data-index') +'.jpg")');
         }, false);
     }
+    let emailbox = document.getElementById('emailbox');
     document.getElementById('spin-cover').addEventListener('click', function () {
-        var emailbox = document.getElementById('emailbox');
-        emailbox.style.display = emailbox.style.display === 'block' ? 'none' : 'block';
+        emailbox.style.display = 'block';
     });
-
+    document.getElementById('emailclose').addEventListener('click', function () {
+        emailbox.style.display = 'none';
+    });
 
     const bar = document.getElementById('split__thumb');
     const top = document.getElementById('split__top');

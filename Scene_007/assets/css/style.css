@@ -173,7 +173,13 @@ body {
     background-image: url("../emails/1.jpg");
     background-size: cover;
 }
-
+#emailclose {
+    position: absolute;
+    height: 45px;
+    width: 120px;
+    top: 0;
+    left: 0;
+}
 @media (max-width:1536px){
     #landscape_bg {
         display: none;

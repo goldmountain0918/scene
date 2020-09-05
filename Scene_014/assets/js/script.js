@@ -79,17 +79,19 @@ document.addEventListener('DOMContentLoaded', (event) => {
     document.addEventListener('touchend', () => {
         mouse_is_down = false;
     })
-
+    let emailbox = document.getElementById('emailbox');
     document.getElementById('trigger').addEventListener('click', function () {
-        var emailbox = document.getElementById('emailbox');
         var bar = document.getElementById('split__bar');
         var bottom = document.getElementById('split__bottom');
         if (document.documentElement.clientWidth > 1536) {
-            emailbox.style.display = emailbox.style.display === 'block' ? 'none' : 'block';
+            emailbox.style.display = 'block';
         } else {
             bar.style.display = bar.style.display === 'block' ? 'none' : 'block';
             bottom.style.display = bottom.style.display === 'block' ? 'none' : 'block';
         }
+    });
+    document.getElementById('emailclose').addEventListener('click', function () {
+        emailbox.style.display = 'none';
     });
 });
 
