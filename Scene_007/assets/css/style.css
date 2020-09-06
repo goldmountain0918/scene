@@ -197,16 +197,17 @@ body {
 }
 
 #split__top {
-    height: 50%;
+    height: 2048px;
     background-image: url('../img/top.png');
     background-repeat: no-repeat;
+    transition: height 1s;
 }
 
 #split__bottom {
     flex: 1;
-    padding-top: 200px;
     background-image: url('../img/notepad-header.png');
     background-repeat: no-repeat;
+    display: none;
 }
 
 #split__bar {
@@ -215,6 +216,7 @@ body {
     cursor: row-resize;
     background-color: white;
     position: relative;
+    display: none;
 }
 
 #split__bar #split__thumb {
@@ -235,4 +237,6 @@ textarea {
     outline: none;
     font-size: 30px;
     margin-left: 168px;
+    margin-top: 200px;
+    display: none;
 }

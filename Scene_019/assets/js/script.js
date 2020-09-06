@@ -47,11 +47,8 @@ $(function() {
     let rangePercent = $('[type="range"]').val();
     $('[type="range"]').on('change input', function() {
         rangePercent = $('[type="range"]').val();
-        // s.textContent = `.range::-webkit-slider-thumb{background-color: hsl(${rangePercent / 100 * 250}, 100%, 50%)}`;
-        const vid = document.getElementById("landscape_bg");
+        const vid = document.getElementById("landscape_main");
         vid.playbackRate = 4 - rangePercent;
-        // console.log('range', rangePercent)
-        console.log('range', ((3 - rangePercent) / 2 * 1090) * 0.773 + 123.5 )
         const slider_height = ((3 - rangePercent) / 2 * 1090) * 0.773 + 123.5;
         $('#slider_bg').css('height', `${slider_height}px`);
         $('#slider_bg').css('background-color', `hsl(${(rangePercent - 1) * 30}, 100%, 50%)`);

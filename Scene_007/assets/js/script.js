@@ -80,4 +80,15 @@ document.addEventListener('DOMContentLoaded', (event) => {
         mouse_is_down = false;
     });
 
+    document.getElementById('portrait_bg').addEventListener('click', () => {
+           document.getElementById('split__bottom').style.display = 'block';
+           document.getElementById('split__bar').style.display = 'block';
+           document.getElementById('split__top').style.height = '50%';
+           setTimeout(() => {
+               document.getElementById('textarea').style.display = 'block';
+           }, 300);
+           setTimeout(() => {
+               document.getElementById('split__top').style.transition = 'none';
+           }, 1000);
+    });
 });

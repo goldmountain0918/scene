@@ -19,6 +19,32 @@ body {
     left: 0;
 }
 
+#landscape_bg_video {
+    position: absolute;
+    z-index: -1;
+}
+
+#landscape_header {
+    background-image: url("../img/landscape_header.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 290px;
+    width: 2048px;
+}
+
+#landscape_footer {
+    background-image: url("../img/landscape_footer.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 360px;
+    width: 1774px;
+}
+
+#landscape_main {
+    width: 1774px;
+    height: 886px;
+}
+
 #slider {
     display: none;
 }
