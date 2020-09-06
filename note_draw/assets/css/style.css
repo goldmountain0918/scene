@@ -1,8 +1,8 @@
 body {
     margin: 0;
-    width: 100vw;
-    height: 100vh;
     overflow: hidden;
+    width: 1536px;
+    height: 2048px;
 }
 
 #canvas {
@@ -17,4 +17,12 @@ textarea {
     outline: none;
     font-size: 30px;
     background-color: #BDBDBD;
+    padding: 100px;
+}
+
+@media (min-width:1537px) {
+    body {
+        width: 2048px;
+        height: 1536px;
+    }
 }
