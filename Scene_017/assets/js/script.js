@@ -156,7 +156,7 @@ $(function() {
         $('#terminal').css('max-height', '840px');
     });
 
-    const bar = document.getElementById('split__thumb');
+/*    const bar = document.getElementById('split__thumb');
     const top = document.getElementById('terminal');
     let mouse_is_down = false;
 
@@ -167,9 +167,12 @@ $(function() {
     document.addEventListener('touchmove', (e) => {
         if (!mouse_is_down) return;
         top.style.height = `${e.touches[0].clientY}px`;
-    })
+    });
 
     document.addEventListener('touchend', () => {
         mouse_is_down = false;
-    })
+    });*/
+    window.onresize = function() {
+        console.log(window.innerWidth, window.outerWidth, window.innerHeight, window.outerHeight);
+    };
 });
