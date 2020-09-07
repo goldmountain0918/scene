@@ -1,8 +1,13 @@
-body, #textDiv {
+body {
     margin: 0;
     overflow: hidden;
     width: 1536px;
     height: 2048px;
+}
+
+#textDiv {
+    width: 1336px;
+    height: 1848px;
 }
 
 #canvas {
@@ -26,8 +31,12 @@ textarea {
 }
 
 @media (min-width:1537px) {
-    body, #textDiv {
+    body {
         width: 2048px;
         height: 1536px;
+    }
+    #textDiv {
+        width: 1848px;
+        height: 1336px;
     }
 }
