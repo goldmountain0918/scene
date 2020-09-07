@@ -3,11 +3,7 @@ body {
     overflow: hidden;
     width: 1536px;
     height: 2048px;
-}
-
-#textDiv {
-    width: 1336px;
-    height: 1848px;
+    background-color: #BDBDBD;
 }
 
 #canvas {
@@ -15,19 +11,15 @@ body {
     z-index: -1;
 }
 
-#textDiv {
-    padding: 100px;
-    background-color: #BDBDBD;
-    position: relative;
-}
-
 textarea {
-    width: 100%;
+    width: 1336px;
     height: 100%;
     border: none;
     outline: none;
     font-size: 30px;
     background-color: #BDBDBD;
+    margin-top: 100px;
+    margin-left: 100px;
 }
 
 @media (min-width:1537px) {
@@ -35,8 +27,7 @@ textarea {
         width: 2048px;
         height: 1536px;
     }
-    #textDiv {
+    textarea {
         width: 1848px;
-        height: 1336px;
     }
 }
