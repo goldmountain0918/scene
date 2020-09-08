@@ -173,6 +173,12 @@ $(function() {
         mouse_is_down = false;
     });*/
     window.onresize = function() {
-        console.log(window.innerWidth, window.outerWidth, window.innerHeight, window.outerHeight);
+        if (window.innerHeight < 1024) {
+            $('#terminal').css('opacity', '1');
+            $('#terminal').css('max-height', '840px');
+        } else {
+            $('#terminal').css('opacity', '1');
+            $('#terminal').css('max-height', '0');
+        }
     };
 });

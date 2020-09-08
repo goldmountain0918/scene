@@ -2,11 +2,15 @@ body {
     margin: 0;
 }
 
-#portrait_bg {
+#portrait_bg, #portrait_bg_loop, #portrait_bg_active {
     position: fixed;
     top: 0;
     left: 0;
     z-index: -1;
+}
+
+#portrait_bg_loop, #portrait_bg_active {
+    opacity: 0;
 }
 
 /* Button style */

@@ -166,10 +166,10 @@ body {
 }
 #emailcontent {
     position: absolute;
-    height: 700px;
-    width: 600px;
-    top: 200px;
-    left: 120px;
+    height: 1041px;
+    width: 841px;
+    top: 45px;
+    left: 0;
     background-image: url("../emails/1.jpg");
     background-size: cover;
 }
