@@ -89,7 +89,7 @@ canvas {
     width: 209px;
     position: absolute;
     top: 0;
-    right: 20px;
+    left: 790px;
 }
 
 @media (max-width:1536px){

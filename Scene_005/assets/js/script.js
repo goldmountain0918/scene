@@ -8,6 +8,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
         document.getElementById('main').classList.add('inactive');
         document.getElementById('footer-main').classList.add('inactive');
         document.getElementById('header').classList.add('active');
+        document.getElementById('model').style.height = '584px';
     });
     document.getElementById('back').addEventListener('click', () => {
         document.getElementById('video').classList.remove('active');
@@ -15,6 +16,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
         document.getElementById('main').classList.remove('inactive');
         document.getElementById('footer-main').classList.remove('inactive');
         document.getElementById('header').classList.remove('active');
+        document.getElementById('model').style.height = '614px';
     });
     document.getElementById('reveal').addEventListener('camera-change', () => {
         console.log('changing...', document.getElementById('reveal').getCameraOrbit());

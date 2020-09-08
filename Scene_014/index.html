@@ -39,41 +39,40 @@ Mars Sample Return is a very high priority for the scientific community, based o
     </div>
     <div id="myDiagramDiv" style="width:1024px; height:100%;"></div>
     <div style="display: none">
-        <textarea id="mySavedModel" style="width:100%;height:250px;">{ "class": "go.GraphLinksModel",
+        <textarea id="mySavedModel" style="width:100%;height:250px;">{ "class": "GraphLinksModel",
   "copiesArrays": true,
   "copiesArrayObjects": true,
   "linkFromPortIdProperty": "fromPort",
   "linkToPortIdProperty": "toPort",
   "nodeDataArray": [
-{"key":1, "name":"Unit One", "loc":"101 204",
- "leftArray":[ {"portColor":"#fae3d7", "portId":"left0"} ],
- "topArray":[ {"portColor":"#d6effc", "portId":"top0"} ],
- "bottomArray":[ {"portColor":"#ebe3fc", "portId":"bottom0"} ],
- "rightArray":[ {"portColor":"#eaeef8", "portId":"right0"},{"portColor":"#fadfe5", "portId":"right1"} ] },
-{"key":2, "name":"Unit Two", "loc":"320 152",
- "leftArray":[ {"portColor":"#6cafdb", "portId":"left0"},{"portColor":"#66d6d1", "portId":"left1"},{"portColor":"#fae3d7", "portId":"left2"} ],
- "topArray":[ {"portColor":"#d6effc", "portId":"top0"} ],
- "bottomArray":[ {"portColor":"#eaeef8", "portId":"bottom0"},{"portColor":"#eaeef8", "portId":"bottom1"},{"portColor":"#6cafdb", "portId":"bottom2"} ],
- "rightArray":[  ] },
-{"key":3, "name":"Unit Three", "loc":"384 319",
- "leftArray":[ {"portColor":"#66d6d1", "portId":"left0"},{"portColor":"#fadfe5", "portId":"left1"},{"portColor":"#6cafdb", "portId":"left2"} ],
- "topArray":[ {"portColor":"#66d6d1", "portId":"top0"} ],
- "bottomArray":[ {"portColor":"#6cafdb", "portId":"bottom0"} ],
- "rightArray":[  ] },
-{"key":4, "name":"Unit Four", "loc":"138 351",
- "leftArray":[ {"portColor":"#fae3d7", "portId":"left0"} ],
- "topArray":[ {"portColor":"#6cafdb", "portId":"top0"} ],
- "bottomArray":[ {"portColor":"#6cafdb", "portId":"bottom0"} ],
- "rightArray":[ {"portColor":"#6cafdb", "portId":"right0"},{"portColor":"#66d6d1", "portId":"right1"} ] }
+{"key":1, "name":"RF\n31", "loc":"101 204", "leftArray":[ {"portColor":"#fae3d7", "portId":"left0"} ], "topArray":[ {"portColor":"#d6effc", "portId":"top0"} ], "bottomArray":[ {"portColor":"#ebe3fc", "portId":"bottom0"} ], "rightArray":[ {"portColor":"#eaeef8", "portId":"right0"},{"portColor":"#fadfe5", "portId":"right1"} ]},
+{"key":2, "name":"AX\n001", "loc":"320 152", "leftArray":[ {"portColor":"#6cafdb", "portId":"left0"},{"portColor":"#66d6d1", "portId":"left1"},{"portColor":"#fae3d7", "portId":"left2"} ], "topArray":[ {"portColor":"#d6effc", "portId":"top0"} ], "bottomArray":[ {"portColor":"#eaeef8", "portId":"bottom0"},{"portColor":"#eaeef8", "portId":"bottom1"},{"portColor":"#6cafdb", "portId":"bottom2"} ], "rightArray":[]},
+{"key":3, "name":"AX\nX01", "loc":"402 299", "leftArray":[ {"portColor":"#66d6d1", "portId":"left0"},{"portColor":"#fadfe5", "portId":"left1"},{"portColor":"#6cafdb", "portId":"left2"} ], "topArray":[ {"portColor":"#66d6d1", "portId":"top0"} ], "bottomArray":[ {"portColor":"#6cafdb", "portId":"bottom0"} ], "rightArray":[ {"portId":"right0", "portColor":"#ebe3fc"} ]},
+{"key":4, "name":"AB\n210", "loc":"138 351", "leftArray":[ {"portColor":"#fae3d7", "portId":"left0"} ], "topArray":[ {"portColor":"#6cafdb", "portId":"top0"} ], "bottomArray":[ {"portColor":"#6cafdb", "portId":"bottom0"} ], "rightArray":[ {"portColor":"#6cafdb", "portId":"right0"},{"portColor":"#66d6d1", "portId":"right1"} ]},
+{"name":"EXT", "leftArray":[ {"portId":"left0", "portColor":"#ebe3fc"} ], "rightArray":[], "topArray":[ {"portId":"top0", "portColor":"#eaeef8"} ], "bottomArray":[ {"portId":"bottom0", "portColor":"#ebe3fc"} ], "key":-5, "loc":"455 79"},
+{"name":"RF\n34", "leftArray":[], "rightArray":[], "topArray":[], "bottomArray":[], "key":-6, "loc":"4 305"},
+{"name":"AC\n210", "leftArray":[], "rightArray":[], "topArray":[], "bottomArray":[], "key":-7, "loc":"7 384"},
+{"key":-8, "name":"AX\nX01", "loc":"347 476", "leftArray":[ {"portColor":"#66d6d1", "portId":"left0"},{"portColor":"#fadfe5", "portId":"left1"},{"portColor":"#6cafdb", "portId":"left2"} ], "topArray":[ {"portColor":"#66d6d1", "portId":"top0"} ], "bottomArray":[ {"portColor":"#6cafdb", "portId":"bottom0"} ], "rightArray":[ {"portId":"right0", "portColor":"#ebe3fc"} ]},
+{"name":"AX\nmerge", "leftArray":[ {"portId":"left0", "portColor":"#eaeef8"},{"portId":"left1", "portColor":"#fadfe5"} ], "rightArray":[], "topArray":[ {"portId":"top0", "portColor":"#fae3d7"} ], "bottomArray":[], "key":-9, "loc":"470 442"},
+{"name":"bal", "leftArray":[], "rightArray":[], "topArray":[ {"portId":"top0", "portColor":"#eaeef8"} ], "bottomArray":[ {"portId":"bottom0", "portColor":"#fae3d7"} ], "key":-10, "loc":"348 376"},
+{"name":"BC\n210", "leftArray":[], "rightArray":[], "topArray":[], "bottomArray":[], "key":-11, "loc":"9 456"}
  ],
   "linkDataArray": [
-{"from":4, "to":2, "fromPort":"top0", "toPort":"bottom0"},
-{"from":4, "to":2, "fromPort":"top0", "toPort":"bottom0"},
-{"from":3, "to":2, "fromPort":"top0", "toPort":"bottom1"},
-{"from":4, "to":3, "fromPort":"right0", "toPort":"left0"},
-{"from":4, "to":3, "fromPort":"right1", "toPort":"left2"},
-{"from":1, "to":2, "fromPort":"right0", "toPort":"left1"},
-{"from":1, "to":2, "fromPort":"right1", "toPort":"left2"}
+{"from":4, "to":2, "fromPort":"top0", "toPort":"bottom0", "points":[138,313,138,303,138,260.5,310,260.5,310,204,310,190]},
+{"from":4, "to":2, "fromPort":"top0", "toPort":"bottom0", "points":[138,313,138,303,138,300,310,300,310,204,310,190]},
+{"from":3, "to":2, "fromPort":"top0", "toPort":"bottom1", "points":[402,261,402,247,402,229.5,320,229.5,320,208,320,190]},
+{"from":4, "to":3, "fromPort":"right0", "toPort":"left0", "points":[176,346,190,346,280,346,280,289,338,289,364,289]},
+{"from":4, "to":3, "fromPort":"right1", "toPort":"left2", "points":[176,356,198,356,292,356,292,309,354,309,364,309]},
+{"from":1, "to":2, "fromPort":"right0", "toPort":"left1", "points":[139,199,153,199,224.5,199,224.5,152,264,152,282,152]},
+{"from":1, "to":2, "fromPort":"right1", "toPort":"left2", "points":[139,209,161,209,232.5,209,232.5,162,272,162,282,162]},
+{"from":2, "to":-5, "fromPort":"top0", "toPort":"left0", "points":[320,114,320,104,320,79,363.5,79,407,79,417,79]},
+{"from":4, "to":-8, "fromPort":"right1", "toPort":"left1", "points":[176,356,186,356,252.5,356,252.5,476,287,476,309,476]},
+{"from":4, "to":-8, "fromPort":"right1", "toPort":"left2", "points":[176,356,186,356,248.5,356,248.5,486,279,486,309,486]},
+{"from":3, "to":-9, "fromPort":"right0", "toPort":"left0", "points":[440,299,450,299,450,368.5,418,368.5,418,437,432,437]},
+{"from":-8, "to":-9, "fromPort":"right0", "toPort":"left1", "points":[385,476,399,476,399,476,399,447,422,447,432,447]},
+{"from":-9, "to":-5, "fromPort":"top0", "toPort":"bottom0", "points":[470,404,470,390,470,256.5,455,256.5,455,127,455,117]},
+{"from":3, "to":-10, "fromPort":"bottom0", "toPort":"top0", "points":[402,337,402,351,402,348,402,348,402,428,308,428,308,332,348,332,348,328,348,338]},
+{"from":-10, "to":-8, "fromPort":"bottom0", "toPort":"top0", "points":[348,414,348,428,349.5,428,349.5,428,347,428,347,438]}
  ]}
     </textarea>
     </div>
