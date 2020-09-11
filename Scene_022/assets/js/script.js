@@ -8,4 +8,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
         document.getElementById('portrait_bg_active').style['opacity'] = '1';
         document.getElementById('portrait_bg_active').play();
     });
+    setTimeout(() => {
+        document.getElementById('launch').style.display = 'block';
+    }, 150);
 });

@@ -72,6 +72,7 @@ button {
     position: absolute;
     top: 1475px;
     left: -50px;
+    display: none;
 }
 
 #engaged {
