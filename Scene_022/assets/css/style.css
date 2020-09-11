@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    background-color: #171717;
 }
 
 #portrait_bg, #portrait_bg_loop, #portrait_bg_active {
