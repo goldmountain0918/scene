@@ -10,5 +10,5 @@ document.addEventListener('DOMContentLoaded', (event) => {
     });
     setTimeout(() => {
         document.getElementById('launch').style.display = 'block';
-    }, 150);
+    }, 250);
 });
